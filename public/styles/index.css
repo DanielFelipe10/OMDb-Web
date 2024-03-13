@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --bg-color: #0A0A0A;
+    --secondary-black: #151515;
+    --blue: #335BFF;
+}
+
+*{
+    font-family: "Raleway", sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    color: white;
+    background-color: var(--bg-color);
+}
+
+header{
+    width: 100wh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all .7s ease;
+}
+
+h1{
+    width: 100%;
+    text-align: center;
+}
+
+header select{
+    width: 50%;
+    height: 5%;
+    text-align: center;
+    background-color: var(--secondary-black);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+header input{
+    width: 80%;
+    height: 8%;
+    padding: 10px;
+    background-color: var(--secondary-black);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+
+header button{
+    width: 80%;
+    height: 7%;
+    background-color: var(--blue);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+header > *{
+    margin-bottom: 5%;
+}
+
+/*Move header*/
+
+header.navbar > *{
+    margin-bottom: 1%;
+}
+
+.header.navbar{
+    height: 25vh;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.titleH.navbar{
+    font-size: 1.7em;
+}
+
+.selectH.navbar{
+    width: 30%;
+    height: 25%;
+    border-radius: 5px 0 0 5px;
+}
+
+.inputH.navbar{
+    width: 60%;
+    height: 25%;
+    border-radius: 0 5px 5px 0;
+    font-size: 1em;
+}
+
+.buttonH.navbar{
+    height: 25%;
+    width: 90%;
+}
+
+
+

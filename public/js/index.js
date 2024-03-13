@@ -10,7 +10,8 @@ async function searchMovie() {
     data.forEach(movie => {
         const movieTitle = movie.Title;
         const movieYear = movie.Year;
-        resultsDiv.innerHTML += `<p>${movieTitle}(${movieYear})</p>`;
+        const moviePoster = movie.Poster;
+        resultsDiv.innerHTML += `<p>${movieTitle}(${movieYear})</p><img src="${moviePoster}"style="width: 100px">`;
     });
 }
 

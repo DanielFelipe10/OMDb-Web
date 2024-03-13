@@ -3,12 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/index.css">
     <title>Document</title>
 </head>
 <body>
-    <input type="text" id="searchInput">
-    <button id="searchButton">Search</button>
+    <header class="header">
+        <h1 class="titleH">Moovies</h1>
+        <select name="types" id="types" class="selectH">
+            <option value="">Selecciona</option>
+            <option value="movie">Peliculas</option>
+            <option value="series">Series</option>
+            <option value="episode">Episodios</option>
+        </select>
+        <input type="text" id="searchInput" class="inputH">
+        <button id="searchButton" class="buttonH">BUSCAR</button>
+    </header>
     <div id="results"></div>
-    <script src="js/index.js" type="module"></script>
+    <script type="module" src="js/index.js"></script>
+    <script type="module" src="js/animation/animations.js"></script>
 </body>
 </html>
