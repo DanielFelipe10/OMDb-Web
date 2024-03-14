@@ -1,0 +1,99 @@
+header{
+    width: 100wh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all .5s ease-in-out;
+    background: url("https://michaelaganezercom.files.wordpress.com/2020/10/movie-posters.jpg");
+    background-position: 30%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.shadow{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.701);
+    z-index: 1;
+}
+
+header h1{
+    width: 100%;
+    text-align: center;
+}
+
+header select{
+    width: 50%;
+    height: 5%;
+    text-align: center;
+    background-color: var(--blue);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+header input{
+    width: 80%;
+    height: 8%;
+    padding: 10px;
+    background-color: var(--secondary-black);
+    color: white;
+    border: 2px solid var(--blue);
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+
+header button{
+    width: 80%;
+    height: 7%;
+    background-color: var(--blue);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all .5s ease-in-out;
+}
+
+header > *{
+    margin-bottom: 5%;
+}
+
+/*Move header*/
+
+header.navbar > *{
+    margin-bottom: 1%;
+}
+
+.header.navbar{
+    height: 25vh;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background: var(--bg-color);
+}
+
+.titleH.navbar{
+    font-size: 1.7em;
+}
+
+.selectH.navbar{
+    width: 30%;
+    height: 25%;
+    border-radius: 5px 0 0 5px;
+}
+
+.inputH.navbar{
+    width: 60%;
+    height: 25%;
+    border-radius: 0 5px 5px 0;
+    font-size: 1em;
+}
+
+.buttonH.navbar{
+    height: 25%;
+    width: 90%;
+}
