@@ -7,6 +7,7 @@
 }
 
 .card{
+    position: relative;
     width: 45%;
     background-color: var(--secondary-black);
     border-radius: 5px;
@@ -14,4 +15,17 @@
 
 .card img{
     width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+.type{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: rgba(0, 0, 0, 0.700);
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 10px;
+    font-weight: bold;
+    text-transform: capitalize;
 }

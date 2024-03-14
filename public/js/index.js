@@ -7,11 +7,12 @@ async function searchMovie() {
     const resultsDiv = document.getElementById("results");
     resultsDiv.innerHTML = '';
 
-    data.forEach(movie => {
-        const movieTitle = movie.Title;
-        const movieYear = movie.Year;
-        const moviePoster = movie.Poster;
-        resultsDiv.innerHTML += `<div class="card"><img src="${moviePoster}"><p>${movieTitle}</p><h6>(${movieYear})</h6></div>`;
+    data.forEach(prod => {
+        const prodTitle = prod.Title;
+        const prodYear = prod.Year;
+        const prodPoster = prod.Poster;
+        const prodType = prod.Type;
+        resultsDiv.innerHTML += `<div class="card"><p class="type">${prodType}</p><img src="${prodPoster}"><p>${prodTitle}</p><h6>(${prodYear})</h6></div>`;
     });
 }
 
