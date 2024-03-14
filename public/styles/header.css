@@ -6,7 +6,7 @@ header{
     align-items: center;
     flex-direction: column;
     transition: all .5s ease-in-out;
-    background: url("https://michaelaganezercom.files.wordpress.com/2020/10/movie-posters.jpg");
+    background: url("https://wallpapers.com/images/hd/horror-movie-collage-3795-x-2646-gzvt1v59yhar2ms1.jpg");
     background-position: 30%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -31,7 +31,7 @@ header select{
     width: 50%;
     height: 5%;
     text-align: center;
-    background-color: var(--blue);
+    background-color: var(--secondary-black);
     color: white;
     border: none;
     border-radius: 5px;
@@ -45,7 +45,7 @@ header input{
     color: white;
     border: 2px solid var(--blue);
     border-radius: 5px;
-    font-size: 1.1em;
+    font-size: 1em;
 }
 
 header button{
@@ -76,6 +76,10 @@ header.navbar > *{
     background: var(--bg-color);
 }
 
+.shadow.navbar{
+    display: none;
+}
+
 .titleH.navbar{
     font-size: 1.7em;
 }
@@ -91,6 +95,7 @@ header.navbar > *{
     height: 25%;
     border-radius: 0 5px 5px 0;
     font-size: 1em;
+    border: none;
 }
 
 .buttonH.navbar{

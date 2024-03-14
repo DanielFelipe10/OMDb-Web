@@ -1,0 +1,17 @@
+#results{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.card{
+    width: 45%;
+    background-color: var(--secondary-black);
+    border-radius: 5px;
+}
+
+.card img{
+    width: 100%;
+}

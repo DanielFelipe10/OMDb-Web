@@ -11,7 +11,7 @@ async function searchMovie() {
         const movieTitle = movie.Title;
         const movieYear = movie.Year;
         const moviePoster = movie.Poster;
-        resultsDiv.innerHTML += `<p>${movieTitle}(${movieYear})</p><img src="${moviePoster}"style="width: 100px">`;
+        resultsDiv.innerHTML += `<div class="card"><img src="${moviePoster}"><p>${movieTitle}</p><h6>(${movieYear})</h6></div>`;
     });
 }
 
