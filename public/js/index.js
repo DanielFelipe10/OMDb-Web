@@ -1,8 +1,9 @@
 const button = document.getElementById("searchButton");
 
 async function searchMovie() {
+    const selectProd = document.getElementById("types").value;
     const searchTerm = document.getElementById("searchInput").value;
-    const response = await fetch(`/search?s=${searchTerm}`);
+    const response = await fetch(`/search?s=${searchTerm}&type=${selectProd}`);
     const data = await response.json();
     const resultsDiv = document.getElementById("results");
     resultsDiv.innerHTML = '';

@@ -9,11 +9,31 @@
 .card{
     position: relative;
     width: 45%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
     background-color: var(--secondary-black);
     border-radius: 5px;
+    text-align: center;
+}
+
+.card p:nth-child(3){
+    font-size: .9em;
+    font-weight: bold;
+    margin-bottom: 0;
+    padding: 5px;
+}
+
+.card h6{
+    margin: 0;
+    margin-bottom: 15px;
+    font-size: .7em;
+    font-weight: 100;
 }
 
 .card img{
+    z-index: 1;
     width: 100%;
     border-radius: 5px 5px 0 0;
 }
@@ -28,4 +48,5 @@
     font-size: 10px;
     font-weight: bold;
     text-transform: capitalize;
+    z-index: 2;
 }
