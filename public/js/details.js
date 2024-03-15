@@ -1,9 +1,18 @@
+// Get ID from URL
 const params = new URLSearchParams(window.location.search);
 const prodID = params.get('id');
-console.log(prodID)
 
+// Get data from OMDb by ID
 const response = await fetch(`/searchProduction?i=${prodID}`);
 const data = await response.json();
 const prodPoster = data.Poster;
-const poster = document.getElementById("poster");
-poster.innerHTML = `<img src="${prodPoster}" style="width:200px">`;
+console.log(prodPoster);
+
+const poster = document.getElementById("posterImage");
+poster.src = prodPoster;
+
+//Actors, awards, genre, released, plot, imdbRating, imdbVotes
+
+//Inner
+const prodImage = document.getElementById("productionImg");
+prodImage.style.backgroundImage = `url("${prodPoster}")`;
