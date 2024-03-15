@@ -11,9 +11,9 @@ app.use(express.static(path.join(__dirname, "../public")));
 app.get('/search', async(req, res)=>{
     try{
         const searchTerm = req.query.s;
-        const category = req.query.type;
+        const categorie = req.query.type;
         const apiKey = "2bcf3f8"
-        const url = `http://www.omdbapi.com/?s=${searchTerm}&type=${category}&apikey=${apiKey}`; 
+        const url = `http://www.omdbapi.com/?s=${searchTerm}&type=${categorie}&apikey=${apiKey}`; 
         const response = await axios.get(url);
         const movies = response.data.Search;
         res.json(movies); 
