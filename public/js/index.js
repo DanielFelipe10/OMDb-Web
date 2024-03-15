@@ -18,7 +18,7 @@ async function searchMovie() {
         const card = document.createElement("div");
         card.classList.add("card");
         card.innerHTML += `<p class="type">${prodType}</p><img src="${prodPoster}"><p>${prodTitle}</p><h6>(${prodYear})</h6>`;
-        card.addEventListener('click', () => showDetails(prodId));
+        card.addEventListener('click', () =>showDetails(prodId));
         resultsDiv.appendChild(card);
     });
 }
