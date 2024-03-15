@@ -12,7 +12,7 @@ app.get('/search', async(req, res)=>{
     try{
         const searchTerm = req.query.s;
         const categorie = req.query.type;
-        const apiKey = "2bcf3f8"
+        const apiKey = "2bcf3f8";
         const url = `http://www.omdbapi.com/?s=${searchTerm}&type=${categorie}&apikey=${apiKey}`; 
         const response = await axios.get(url);
         const movies = response.data.Search;
