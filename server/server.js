@@ -17,7 +17,6 @@ app.get('/search', async(req, res)=>{
         const response = await axios.get(url);
         const movies = response.data.Search;
         res.json(movies); 
-        console.log("Exito", movies)
     }catch(error){
         console.error("Error al obtener los datos de la API:", error);
         res.status(500).send("Error al obtener datos de la API");
@@ -33,8 +32,6 @@ app.get('/searchProduction', async(req, res)=>{
         const response = await axios.get(url);
         const production = response.data;
         res.json(production); 
-        console.log("Exito en prod");
-
     }catch(error){
         console.error("Error al obtener los datos de la API:", error);
         res.status(500).send("Error al obtener datos de la API");
