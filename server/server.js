@@ -6,7 +6,7 @@ const app = express();
 
 const PORT = 4000;
 
-app.use(express.static(path.join(__dirname, "../public")));
+// app.use(express.static(path.join(__dirname, "../public")));
 
 app.get('/search', async(req, res)=>{
     try{
@@ -38,6 +38,6 @@ app.get('/searchProduction', async(req, res)=>{
     }
 });
 
-app.listen(PORT, ()=>{
+/*app.listen(PORT, ()=>{
     console.log(`Servidor escuchando en el puerto ${PORT}`);
-});
+});*/
