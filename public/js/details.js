@@ -39,10 +39,12 @@ imdbDiv.innerHTML = `<img src="https://upload.wikimedia.org/wikipedia/commons/th
                      <h1>${prodIMDBRating}</h1>
                      <p>${prodIMDBVotes}</p>`;
 
-descmoreD.innerHTML = `<h6>Description</h6>
+descmoreD.innerHTML = `<h5>Description</h5>
                        <p>${prodPlot}</p>
-                       <h6>Actors</h6>
+                       <h5>Actors</h5>
                        <p>${prodActors}</p>
+                       <h5>Released</h5>
+                       <p>${prodReleased}</p>
                        `;
 
 

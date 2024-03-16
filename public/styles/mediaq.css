@@ -1,0 +1,71 @@
+@media screen and (min-width: 800px){
+    
+    .shadow{
+        margin: 0;
+        background-color: rgba(0, 0, 0, 0.950);  
+    }
+    
+    header h1{
+        font-size: 3em;
+    }
+    
+    header select{
+        width: 20%;
+    }
+
+    header > *{
+        margin-bottom: 30px;
+    }
+
+    header button{
+        width: 40%;
+    }
+
+    header input{
+        width: 40%;
+    }
+
+    .selectH.navbar{
+        width: 20%;
+        height: 30%;
+    }
+    
+    .inputH.navbar{
+        width: 40%;
+        height: 30%;
+        border-radius: 0;
+    }
+    
+    .buttonH.navbar{
+        width: 20%;
+        height: 30%;
+        border-radius:  0 5px 5px 0;
+    }
+
+    #results{
+        width: 90%;
+        margin: auto;
+        gap: 20px;
+        justify-content: start;
+    }
+
+    .card{
+        width: 15%;
+    }
+
+    .production{
+        display: flex   ;
+    }
+
+    #productionImg{
+        height: 100vh;
+    }
+
+    #productionImg img{
+        width: 50%;
+    }
+
+    .blur{
+        background: linear-gradient(90deg, rgba(14,0,255,0) 0%, var(--bg-color) 90%);
+    }
+}
