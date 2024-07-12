@@ -2,7 +2,7 @@
     
     .shadow{
         margin: 0;
-        background-color: rgba(0, 0, 0, 0.950);  
+        background-color: rgba(0, 0, 0, 0.752);  
     }
     
     header h1{
@@ -67,5 +67,47 @@
 
     .blur{
         background: linear-gradient(90deg, rgba(14,0,255,0) 0%, var(--bg-color) 90%);
+    }
+
+    /*Production*/
+
+    #productionImg{
+        width: 45%;
+    }
+
+    #productionData{
+        width: 55%;
+        justify-content: space-around;
+    }
+
+    .titleD{
+        width: 60%;
+    }
+
+    .titleD h1{
+        font-size: 3em;
+    }
+
+    .imdbD{
+        width: 40%;
+        margin: 0;
+        padding: 20px;
+    }
+    .descmoreD h5{
+        font-size: 1.1em;
+    }
+
+    .descmoreD p{
+        font-size: 1.2em;
+    }
+
+    #genre{
+        padding: 15px;
+        margin: 0;
+    }
+
+    .prodType{
+        padding: 15px;
+        margin: 0;
     }
 }
